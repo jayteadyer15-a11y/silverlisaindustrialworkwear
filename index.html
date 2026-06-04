@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silver Lisa Industrial Workwear Ltd</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f1115;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #090b0f;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #c9a227;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #ffffff;
+    }
+
+    .logo span {
+      color: #c9a227;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #c9a227;
+    }
+
+    .hero {
+      min-height: 85vh;
+      padding: 100px 8%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(15, 17, 21, 0.88), rgba(15, 17, 21, 0.88)),
+        url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero h1 span {
+      color: #c9a227;
+    }
+
+    .hero p {
+      font-size: 19px;
+      margin-bottom: 30px;
+      color: #dddddd;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 14px 24px;
+      margin-right: 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary-btn {
+      background: #c9a227;
+      color: #090b0f;
+    }
+
+    .secondary-btn {
+      border: 1px solid #c9a227;
+      color: #c9a227;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .section-title span {
+      color: #c9a227;
+    }
+
+    .about, .mission-vision, .standards {
+      background: #151922;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1f2430;
+      padding: 25px;
+      border-left: 4px solid #c9a227;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #c9a227;
+    }
+
+    .list {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .list div {
+      background: #1f2430;
+      padding: 14px;
+      border-radius: 4px;
+      border: 1px solid #2f3542;
+    }
+
+    .contact-box {
+      background: #1f2430;
+      padding: 30px;
+      border-radius: 6px;
+      max-width: 700px;
+    }
+
+    .contact-box p {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #090b0f;
+      text-align: center;
+      padding: 30px 8%;
+      border-top: 2px solid #c9a227;
+      color: #cccccc;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 12px 0 0;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero {
+        padding-top: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SILVER <span>LISA</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#standards">Standards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Premium Industrial Workwear Built for <span>Protection</span> and Performance</h1>
+      <p>
+        Silver Lisa Industrial Workwear Ltd delivers durable, safety-focused industrial apparel
+        designed for demanding work environments across the industrial, energy, construction,
+        manufacturing, and welding sectors.
+      </p>
+      <div class="buttons">
+        <a class="primary-btn" href="#contact">Request a Quote</a>
+        <a class="secondary-btn" href="#products">View Products</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About <span>Silver Lisa</span></h2>
+    <p>
+      Silver Lisa Industrial Workwear Ltd is a Trinidad and Tobago-based industrial apparel company
+      focused on delivering high-quality workwear and protective clothing for professionals operating
+      in demanding industries.
+    </p>
+    <p style="margin-top: 15px;">
+      Our brand is built around safety, durability, comfort, and modern professional design. We are
+      committed to building a trusted industrial workwear brand recognized for quality craftsmanship,
+      professional standards, and long-term industry reliability.
+    </p>
+  </section>
+
+  <section class="mission-vision">
+    <div class="grid">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>
+          Silver Lisa Industrial Workwear Ltd is committed to providing high-quality industrial
+          workwear and protective apparel that combines safety, durability, comfort, and professional
+          design for workers operating in demanding environments.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Our Vision</h3>
+        <p>
+          To become a leading industrial workwear brand recognized for innovation, quality, safety,
+          and professional excellence across the Caribbean and international markets.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Our Slogan</h3>
+        <p>
+          Built for Protection. Designed for Professionals.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2 class="section-title">Our <span>Products</span></h2>
+    <p>We specialize in industrial safety apparel designed for performance, durability, and protection.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Industrial Coveralls</h3>
+        <p>Durable industrial coveralls designed for comfort, protection, and professional appearance.</p>
+      </div>
+      <div class="card">
+        <h3>FR Protective Apparel</h3>
+        <p>Flame-resistant garments developed for hazardous and demanding work environments.</p>
+      </div>
+      <div class="card">
+        <h3>Welding Apparel</h3>
+        <p>Protective clothing made for welding, fabrication, and industrial professionals.</p>
+      </div>
+      <div class="card">
+        <h3>Reflective Safety Wear</h3>
+        <p>High-visibility apparel designed to improve worker safety in low-light environments.</p>
+      </div>
+      <div class="card">
+        <h3>Industrial Jackets</h3>
+        <p>Professional industrial outerwear built for durability, comfort, and performance.</p>
+      </div>
+      <div class="card">
+        <h3>Safety Accessories</h3>
+        <p>Industrial apparel accessories designed to support workplace safety requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="standards" id="standards">
+    <h2 class="section-title">Certifications & <span>Standards</span></h2>
+    <p>
+      Silver Lisa Industrial Workwear Ltd is committed to pursuing internationally recognized safety
+      and quality standards for industrial protective apparel.
+    </p>
+
+    <div class="list">
+      <div>Company Registration Certificate</div>
+      <div>FR Protective Apparel Development</div>
+      <div>Industrial Quality Standards</div>
+      <div>Safety-Focused Product Design</div>
+      <div>Manufacturing Partnerships</div>
+      <div>Future Certification Compliance</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Industries <span>We Serve</span></h2>
+    <div class="list">
+      <div>Oil & Gas</div>
+      <div>Construction</div>
+      <div>Manufacturing</div>
+      <div>Welding & Fabrication</div>
+      <div>Industrial Contracting</div>
+      <div>Energy Sector</div>
+      <div>Heavy Industry</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact <span>Us</span></h2>
+    <div class="contact-box">
+      <p>For product inquiries, quotations, partnerships, or business opportunities, contact Silver Lisa Industrial Workwear Ltd.</p>
+      <p><strong>Phone:</strong> (868) 312-7277</p>
+      <p><strong>WhatsApp:</strong> (868) 312-7277</p>
+      <p><strong>Email:</strong> silverlisaltd@gmail.com</p>
+      <p><strong>Location:</strong> Trinidad and Tobago</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Silver Lisa Industrial Workwear Ltd</strong></p>
+    <p>Built for Protection. Designed for Professionals.</p>
+    <p>© 2026 Silver Lisa Industrial Workwear Ltd. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
